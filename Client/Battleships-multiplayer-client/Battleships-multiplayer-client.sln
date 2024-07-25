@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleships-multiplayer-client", "Battleships-multiplayer-client\Battleships-multiplayer-client.csproj", "{412EB55F-0D59-43DF-9AA9-B1214647A00D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{412EB55F-0D59-43DF-9AA9-B1214647A00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412EB55F-0D59-43DF-9AA9-B1214647A00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412EB55F-0D59-43DF-9AA9-B1214647A00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412EB55F-0D59-43DF-9AA9-B1214647A00D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E61C936F-0AC0-4963-8692-222DF69721C3}
+	EndGlobalSection
+EndGlobal
