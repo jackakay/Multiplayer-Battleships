@@ -12,8 +12,8 @@ using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
 using MathNet.Numerics.LinearAlgebra.Double;
 using MathNet.Numerics.LinearAlgebra;
-
-
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Battleships_multiplayer_client
 {
@@ -217,7 +217,11 @@ namespace Battleships_multiplayer_client
                     end = new Point { X = ship.Location.X, Y = ship.Location.Y+ship.Location.Y };
                 }
                 Ship s = new Ship { start = start, end = end };
+                shipList.Add(s);
             }
+            Map map = new Map();
+            map.fleet = shipList;
+            return JsonConvert.SerializeObject(map);
         }
        
         
