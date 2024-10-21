@@ -14,6 +14,8 @@ using MathNet.Numerics.LinearAlgebra.Double;
 using MathNet.Numerics.LinearAlgebra;
 using System.Text.Json.Serialization;
 using Newtonsoft.Json;
+using RestSharp;
+using RestSharp.Authenticators;
 
 namespace Battleships_multiplayer_client
 {
@@ -96,7 +98,7 @@ namespace Battleships_multiplayer_client
                     if (GetAsyncKeyState(13))
                     {
                         bool intersects = false;
-                        foreach(PictureBox ship in placedFleet)
+                        foreach (PictureBox ship in placedFleet)
                         {
                             if (currentActiveShip.Bounds.IntersectsWith(ship.Bounds))
                             {
@@ -157,7 +159,7 @@ namespace Battleships_multiplayer_client
 
 
 
-        
+
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
@@ -203,7 +205,7 @@ namespace Battleships_multiplayer_client
         private string exportGameDataJson()
         {
             List<Ship> shipList = new List<Ship>();
-            foreach(PictureBox ship in placedFleet)
+            foreach (PictureBox ship in placedFleet)
             {
                 Point start = ship.Location;
                 Point end = ship.Location;
@@ -214,7 +216,7 @@ namespace Battleships_multiplayer_client
                 }
                 else if (ship.Width == GRID_LENGTH)
                 {
-                    end = new Point { X = ship.Location.X, Y = ship.Location.Y+ship.Location.Y };
+                    end = new Point { X = ship.Location.X, Y = ship.Location.Y + ship.Location.Y };
                 }
                 Ship s = new Ship { start = start, end = end };
                 shipList.Add(s);
@@ -223,10 +225,12 @@ namespace Battleships_multiplayer_client
             map.fleet = shipList;
             return JsonConvert.SerializeObject(map);
         }
-       
-        
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("data.json", exportGameDataJson());
+            MessageBox.Show("Done"); 
+        }
     }
     public class Map
     {

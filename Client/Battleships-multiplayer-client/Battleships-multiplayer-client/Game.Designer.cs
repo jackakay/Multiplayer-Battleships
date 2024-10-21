@@ -52,7 +52,6 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             pictureBox1.Paint += pictureBox1_Paint;
-            
             // 
             // richTextBox1
             // 
@@ -143,6 +142,7 @@
             button1.TabIndex = 10;
             button1.Text = "Ready";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Game
             // 
@@ -164,8 +164,6 @@
             Name = "Game";
             Text = "Game";
             Load += Game_Load;
-            
-            
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

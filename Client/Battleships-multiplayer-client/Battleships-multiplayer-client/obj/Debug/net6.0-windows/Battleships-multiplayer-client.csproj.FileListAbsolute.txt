@@ -19,3 +19,5 @@ C:\Users\jackk\Desktop\Important\Programming\Multiplayer-Battleships\Client\Batt
 C:\Users\jackk\Desktop\Important\Programming\Multiplayer-Battleships\Client\Battleships-multiplayer-client\Battleships-multiplayer-client\obj\Debug\net6.0-windows\Battleships_multiplayer_client.Game.resources
 C:\Users\jackk\Desktop\Important\Programming\Multiplayer-Battleships\Client\Battleships-multiplayer-client\Battleships-multiplayer-client\bin\Debug\net6.0-windows\MathNet.Numerics.dll
 C:\Users\jackk\Desktop\Important\Programming\Multiplayer-Battleships\Client\Battleships-multiplayer-client\Battleships-multiplayer-client\obj\Debug\net6.0-windows\Battleships-multiplayer-client.csproj.CopyComplete
+C:\Users\jackk\Desktop\Important\Programming\Multiplayer-Battleships\Client\Battleships-multiplayer-client\Battleships-multiplayer-client\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\jackk\Desktop\Important\Programming\Multiplayer-Battleships\Client\Battleships-multiplayer-client\Battleships-multiplayer-client\bin\Debug\net6.0-windows\RestSharp.dll

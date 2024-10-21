@@ -1,0 +1,3 @@
+Once a player creates a game, they go into the ready screen where an opponent can join at any time, if they dont join before theyve
+finished placing their boats, after the player presses ready it checks every 5 seconds to see if the other player has joined and keeps 
+sending requests until the opponent is also ready. They then take turns playing.
